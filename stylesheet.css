@@ -1,5 +1,13 @@
+:root {
+    --dark-color: #1F2937;
+    --light-color: #E5E7EB;
+    --white-color: #F9FAF8;
+    --button-color: #3882F6;
+}
+
 * {
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 body {
@@ -7,7 +15,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: magenta;
     padding: 0;
     margin: 0;
     justify-content: space-between;
@@ -17,39 +24,46 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    background-color: purple;
+    background-color: var(--dark-color);
     width: 100vw;
     justify-content: center;
     align-items: center;
+    color: var(--white-color);
 }
 
 .card-section {
     display: flex;
     flex-direction: column;
     width: 80vw;
-    background-color: tomato;
 }
 
 .quote-block {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: salmon;
+    background-color: var(--light-color);
     justify-content: center;
     align-items: center;
 }
 
 .call-to-action-block {
-    background-color: lightgreen;
+    background-color: var(--button-color);
     width: 60vw;
+    max-height: 16vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .footer {
-    width: 90vw;
+    width: 100vw;
     display: flex;       
     justify-content: center;
-    background-color: goldenrod;
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 
 
@@ -59,13 +73,11 @@ nav {
     width: 80vw;
     display: flex;
     justify-content: space-evenly;
-    background-color: mediumseagreen;
     align-items: center;
 }
 ul {
     list-style-type: none;
     display: flex;
-    background-color: cornflowerblue;
     justify-content: space-evenly;
     flex: 1;
     padding: 0;
@@ -74,9 +86,11 @@ ul {
 .logo {
     display: flex;
     flex: 1;
-    background-color: orange;
     justify-content: flex-start;
     align-items: center;
+    font-size: 24px;
+        font-weight: extra-bold;
+
 }
 
 
@@ -88,7 +102,6 @@ ul {
 }
 
 .hero-content {
-    background-color: violet;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -101,12 +114,33 @@ ul {
     max-width: 50vw;
 }
 
+.title {
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+.hero-content > .subtitle {
+    font-size: 18px;
+    color: var(--light-color);
+}
+
+.hero-content > .button {
+    height: 25px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--white-color)
+}
 
 /* card section */
 
 .section-title {
     flex: 1;
     align-self: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: var(--dark-color)
 }
 
 .cards {
@@ -122,29 +156,62 @@ ul {
     justify-content: center;
 }
 
+.card > img {
+    border-radius: 20px;
+}
+
+.card > .card-subtext {
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
 
 /* quote block */
 
 .quote-container {
-    background-color: khaki;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80vw;
+    padding: 20px 40px;
+    gap: 0px;
 }
 
 .quote {
-    background-color: darkcyan;
     flex: 1;
     align-self: flex-start;
+    color: var(--dark-color);
+    font-size: 36px;
+    font-style: italic;
+
 }
 
 .quote-author {
-    background-color: cyan;
     flex: 1;
     align-self: flex-end;
     margin-left: -10vw;
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: extra-bold;
 }
 
+
 /* call to action block */
+
+
+
+.call-to-action-block > .call-to-action-text {
+    color: var(--white-color);
+}
+
+.call-to-action-block > .button {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    height: 25px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid var(--white-color);
+}
+
 /* footer */
+
