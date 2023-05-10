@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: magenta;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: tomato;
+}
+
+.quote-block {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: salmon;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-block {
+    background-color: lightgreen;
+    width: 60vw;
+    display: flex;
+}
+
+.footer {
+    width: 90vw;
+    display: flex;       
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+
+/* Header Section */
+
+nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: mediumseagreen;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: cornflowerblue;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    background-color: orange;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* hero section (captured in header for header bg) */
+
+.hero-section {
+    width: 80vw;
+    display: flex;
+}
+
+.hero-content {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+}
+
+.hero-image > img {
+    display: flex;
+    max-width: 50vw;
+}
+
+
+/* card section */
+
+.section-title {
+    flex: 1;
+    align-self: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;    
+    max-width: 15vw;
+    flex: 1;
+    justify-content: center;
+}
+
+
+/* quote block */
+
+.quote-container {
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.quote {
+    background-color: darkcyan;
+    flex: 1;
+    align-self: flex-start;
+}
+
+.quote-author {
+    background-color: cyan;
+    flex: 1;
+    align-self: flex-end;
+    margin-left: -10vw;
+}
+
+/* call to action block */
+/* footer */
