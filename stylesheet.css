@@ -48,6 +48,7 @@ body {
     background-color: var(--light-color);
     justify-content: center;
     align-items: center;
+    min-height: 400px;
 }
 
 .call-to-action-block {
@@ -124,6 +125,7 @@ a {
 .hero-image > img {
     display: flex;
     max-width: 35vw;
+    border-radius: 20px;
 }
 
 .title {
@@ -169,7 +171,7 @@ a {
 
 .card {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     max-width: 12vw;
     flex: 1;
     justify-content: center;
@@ -192,7 +194,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70vw;
+    width: 60vw;
     padding: 20px 40px;
     gap: 0px;
 }
@@ -201,9 +203,10 @@ a {
     flex: 1;
     align-self: flex-start;
     color: var(--dark-color);
+    font-family: "Roboto";
     font-size: 36px;
+    font-weight: 100;
     font-style: italic;
-
 }
 
 .quote-author {
@@ -212,7 +215,7 @@ a {
     margin-left: -10vw;
     color: var(--dark-color);
     font-size: 24px;
-    font-weight: extra-bold;
+    font-weight: 800;
 }
 
 
