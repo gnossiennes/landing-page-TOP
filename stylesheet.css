@@ -53,14 +53,14 @@ body {
 
 .call-to-action-block {
     background-color: var(--button-color);
-    width: 60vw;
-    max-height: 16vh;
+    width: 70vw;
+    min-height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
     border-radius: 10px;
+    margin: 100px 0;
+
 }
 
 .footer {
@@ -69,6 +69,7 @@ body {
     justify-content: center;
     background-color: var(--dark-color);
     color: var(--white-color);
+    font-weight: 800;
 }
 
 
@@ -141,7 +142,7 @@ a {
 .hero-content > .button {
     height: 30px;
     width: 130px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
     display: flex;
     justify-content: center;
@@ -224,16 +225,32 @@ a {
 
 
 .call-to-action-block > .call-to-action-text {
+    display: flex;
+    flex-direction: column;
     color: var(--white-color);
+    gap: 5px;
 }
 
+
+.action-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
 .call-to-action-block > .button {
+    height: 30px;
+    width: 130px;
+    border-radius: 8px;
+    border: solid 2px var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--button-color);
     color: var(--white-color);
-    height: 25px;
-    width: 120px;
-    border-radius: 5px;
-    border: 2px solid var(--white-color);
+    font-size: 18px;
+    font-weight: 800;
+    padding: 18px;
 }
 
 /* footer */
